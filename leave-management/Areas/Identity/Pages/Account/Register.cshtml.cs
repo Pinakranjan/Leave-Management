@@ -90,7 +90,9 @@ namespace leave_management.Areas.Identity.Pages.Account
                     UserName = Input.Email,
                     Email = Input.Email,
                     Firstname = Input.FirstName,
-                    Lastname = Input.LastName
+                    Lastname = Input.LastName,
+                    DateJoined = DateTime.Now,
+                    DateOfBirth = DateTime.Now.AddYears(-20)
                 };
                 var result = await _userManager.CreateAsync(user, Input.Password);
                 if (result.Succeeded)
