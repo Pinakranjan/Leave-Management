@@ -17,11 +17,11 @@ namespace leave_management
 
         private static void SeedUsers(UserManager<IdentityUser> userManager)
         {
-            if(userManager.FindByNameAsync("admin").Result == null)
+            if(userManager.FindByNameAsync("admin@localhost.com").Result == null)
             {
                 var user = new Employee
                 {
-                    UserName = "admin",
+                    UserName = "admin@localhost.com",
                     Email = "admin@localhost.com",
                     Firstname="admin",
                     Lastname="Test",
