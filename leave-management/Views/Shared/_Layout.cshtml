@@ -41,10 +41,10 @@
                                     </a>
                                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                                         <a class="dropdown-item text-dark" asp-controller="LeaveTypes" asp-action="Index">Leave Types</a>
-                                        <a class="dropdown-item text-dark" href="#">Leave Allocations</a>
+                                        <a class="dropdown-item text-dark" asp-controller="LeaveAllocation" asp-action="Index">Leave Allocations</a>
                                         <a class="dropdown-item text-dark" href="#">Leave Applications</a>
                                         <div class="dropdown-divider"></div>
-                                        <a class="dropdown-item text-dark" href="#">Employees</a>
+                                        <a class="dropdown-item text-dark" asp-controller="LeaveAllocation" asp-action="ListEmployees">Employees</a>
                                     </div>
                                 </li>
                             }
