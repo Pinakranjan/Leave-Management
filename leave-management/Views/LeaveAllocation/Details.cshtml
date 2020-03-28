@@ -56,12 +56,14 @@
         @foreach (var item in Model.LeaveAllocations)
         {
             <li class="list-group-item">
-                <h6>@item.LeaveType.Name <span class="badge badge-danger">@item.NumberOfDays</span> <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-outline-warning btn-sm" data-placement="top" title="Edit"><i class="fa fa-pencil" aria-hidden="true"></i></a></h6>
+                <h6>@item.LeaveType.Name <span class="badge badge-danger">@item.NumberOfDays</span> <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-outline-warning btn-sm" data-placement="top" title="Edit"><i class="fas fa-pencil-alt" aria-hidden="true"></i></a></h6>
             </li>
         }
     </ul>
 </div>
 <br />
 <div>
-    <a asp-action="ListEmployees" class="btn btn-outline-secondary btn-sm">Back to List</a>
+    <a asp-action="ListEmployees" class="btn btn-outline-secondary btn-sm">
+    <i class="fas fa-arrow-left"></i> Back to List
+    </a>
 </div>

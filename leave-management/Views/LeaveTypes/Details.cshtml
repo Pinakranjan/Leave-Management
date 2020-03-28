@@ -2,7 +2,6 @@
 
 @{
     ViewData["Title"] = "Details";
-    Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
 <h1>Details</h1>
@@ -31,6 +30,8 @@
     </dl>
 </div>
 <div>
-    <a asp-action="Edit" class="btn btn-warning btn-sm" asp-route-id="@Model.Id" data-placement="top" title="Edit"><i class="fa fa-pencil" aria-hidden="true"></i></a>
-    <a asp-action="Index" class="btn btn-outline-secondary btn-sm">Back to List</a>
+    <a asp-action="Edit" class="btn btn-warning btn-sm" asp-route-id="@Model.Id" data-placement="top" title="Edit"><i class="fas fa-pencil-alt" aria-hidden="true"></i></a>
+    <a asp-action="Index" class="btn btn-outline-secondary btn-sm">
+        <i class="fas fa-arrow-left"></i> Back to List
+    </a>
 </div>

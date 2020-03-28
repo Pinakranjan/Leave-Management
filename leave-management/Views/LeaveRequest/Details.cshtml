@@ -101,14 +101,14 @@ else
     @if (Model.Approved == null && Model.Cancelled == false)
     {
         <a class="btn btn-success btn-sm" asp-action="ApproveRequest" asp-route-id="@Model.Id">
-            <i class="fa fa-check"></i> Approve
+            <i class="fas fa-check"></i> Approve
         </a>
         <a class="btn btn-danger btn-sm" asp-action="RejectRequest" asp-route-id="@Model.Id">
-            <i class="fa fa-remove"></i> Reject
+            <i class="fas fa-ban"></i> Reject
         </a>
     }
 
     <a asp-action="Index" class="btn btn-outline-secondary btn-sm">
-        <i class="fa fa-arrow-left"></i> Back to List
+        <i class="fas fa-arrow-left"></i> Back to List
     </a>
 </div>
